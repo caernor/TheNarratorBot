@@ -72,8 +72,4 @@ def send_text(message):
 	elif message.text.lower() == 'меню':
 		bot.send_message(message.chat.id, "ok", reply_markup=main)
 
-@bot.message_handler(content_types=['sticker'])
-def sticker_id(message):
-	print(message)
-
 bot.polling()
